@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 // import Providers from "@/components/Providers";
-// import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "@/components/ui/toaster";
 import { constructMetadata } from "@/lib/utils";
 import { Recursive } from "next/font/google";
 import "./globals.css";
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     <Footer />
                 </main>
 
-                {/* <Toaster /> */}
+                <Toaster />
             </body>
         </html>
     );
